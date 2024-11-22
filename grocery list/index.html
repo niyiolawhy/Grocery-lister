@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/2950e32882.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Grocery list</title>
+  </head>
+  <body>
+    <div id="header" class="bg-blue-200 h-screen">
+      <div class="flex justify-center">
+        <form id="groceryForm" class="bg-white my-20 p-24 border rounded-md">
+          <div id="alert"></div>
+          <h2 id="head" class="flex font-bold text-2xl justify-center pb-8">
+            Grocery Shopping List
+          </h2>
+          <div class="flex">
+            <input
+              class="bg-blue-100 px-8 pb-1 text-xs rounded-l-md"
+              type="text"
+              id="inputItem"
+              name="inputItem"
+              placeholder="e.g. fish"
+            />
+            <button
+              id="submit"
+              class="bg-blue-200 rounded-r-md px-2 py-1 text-xs"
+            >
+              Add
+            </button>
+          </div>
+          <div id="groceryContainer">
+            <ul id="groceryList"></ul> <!-- Updated to use UL here -->
+          </div>
+          <div class="flex justify-center">
+            <button id="clear" class="text-xs text-red-700">Clear Items</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+  
+</html>
